@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>myApp</title>
+</head>
+<body>
+    <div id="root">
+        <div class="container cutted-container">
+            <nav class="panel">
+                <div class="panel-heading is-info">
+                    <h2>drug-filter</h2>
+                    <p class="counter"></p>
+                </div>
+
+                <div class="panel-block">
+                    <p class="control">
+                        <input class="input search" type="text" placeholder="Поиск" disabled>
+                    </p>
+                </div>
+                <div class='user-container'>
+                </div>
+                <div class="states">
+                    <div class="panel-block state-center-block my-loader display_none">
+                        <div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div>
+                    </div>
+                    <div class="panel-block error-block state-center-block display_none">
+                        <div class="notification is-danger">
+                            Oooooops
+                        </div>
+                        <button class='button is-success try-again'>Повторить</button>
+                    </div>
+                    <div class="panel-block display_none not-found">
+                        Ничего не найдено
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
